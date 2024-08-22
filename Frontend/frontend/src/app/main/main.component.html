@@ -1,0 +1,27 @@
+<div class="container" style="margin-top: 0.5em;">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <app-nemos (nemoSelected)="getNemo($event)"></app-nemos>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-body">
+          <app-prices [nemoSelected] = 'nemoSelectedSend' ></app-prices>
+        </div>
+      </div>
+      <hr>
+      <div class="card">
+        <div class="card-body">
+          <app-chart [nemoSelected] = 'nemoSelectedSend'></app-chart>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="m-t-sm flex">
+  <div class="row">
+    <ngx-charts-line-chart *ngIf="iterateData"
+      [view]="view"
+      [scheme]="colorScheme"
+      [schemeType]="schemeType"
+      [legend]="legend"
+      [legendTitle]="legendTitle"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [roundDomains]="roundDomains"
+      [xAxis]="xAxis"
+      [yAxis]="yAxis"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel"
+      [timeline]="timeline"
+      [results]="responseData"
+      (select)="onSelect($event)"
+      (activate)="onActivate($event)"
+      (deactivate)="onDeactivate($event)"
+      >
+    </ngx-charts-line-chart>
+  </div>
+
+</div>
+

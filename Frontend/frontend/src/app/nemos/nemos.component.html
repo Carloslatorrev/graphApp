@@ -1,0 +1,18 @@
+<table class="table table-bordered table-hover table-responsive" >
+  <thead class="thead-dark">
+      <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+        </tr>
+  </thead>
+ <tbody>
+  <tr *ngFor="let item of nemos | slice: (page-1) * pageSize : page * pageSize" [(ngModel)]="item.selected" (click)="onClick(item.symbol)">
+      <th scope="row">{{item.symbol}}</th>
+      <td>{{item.name}}</td>
+  </tr>
+ </tbody>
+</table>
+<ngb-pagination
+  [(page)]="page"
+  [pageSize]="pageSize"
+  [collectionSize]="nemos.length"></ngb-pagination>

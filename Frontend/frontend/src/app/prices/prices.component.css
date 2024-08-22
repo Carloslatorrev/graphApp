@@ -1,0 +1,8 @@
+#divPrices {
+  overflow:scroll;
+  height:300px;
+  overflow-x: hidden;
+}
+#divPrices table {
+    background-color:lightgray;
+}

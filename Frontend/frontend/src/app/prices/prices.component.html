@@ -1,0 +1,16 @@
+<div id="divPrices">
+  <table class="table table-bordered table-striped table-responsive">
+      <thead class="thead-dark">
+          <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Price</th>
+            </tr>
+      </thead>
+     <tbody *ngIf="iterateData">
+      <tr *ngFor="let item of responseData" [(ngModel)]="item.selected">
+          <th scope="row">{{item.date}}</th>
+          <td>{{item.close}}</td>
+      </tr>
+     </tbody>
+  </table>
+</div>
